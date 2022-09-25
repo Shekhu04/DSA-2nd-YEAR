@@ -1,9 +1,9 @@
-#include <iostream>
-#include <cstdio>
-using namespace std;
-
-int max_of_four(int a, int b, int c, int d){
-    if (a>b&&a>c&&a>d){
+#include <stdio.h>
+/*
+Add `int max_of_four(int a, int b, int c, int d)` here.
+*/
+int max_of_four(int a,int b,int c,int d){
+    if (a>b && a>c && a>d){
         return a;
     }
     else if (b>c&&b>d){
@@ -15,7 +15,9 @@ int max_of_four(int a, int b, int c, int d){
     else{
         return d;
     }
-}    
+    
+}
+    
 
 int main() {
     int a, b, c, d;
