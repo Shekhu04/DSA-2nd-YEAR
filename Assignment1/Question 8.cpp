@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include<math.h>
 
-void update(int *x,int *y) {
+void update(int *a,int *b) {
     int s;
-    s=*x+*y;
+    s=*a+*b;
     printf("%d",s);
-    int c;
-    c=abs(*x-*y);
-    printf("\n%d",c);
+    int d;
+    d=abs(*a-*b);
+    printf("\n%d",d);
     
 }
 
