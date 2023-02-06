@@ -1,29 +1,25 @@
-#include <iostream>
+#include <cmath>
 #include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
 using namespace std;
 
-/*
-Add `int max_of_four(int a, int b, int c, int d)` here.
-*/
-int max_of_four(int a, int b, int c ,int d)
-{
-    if(a>b && a>c && a>d)
-    return a;
-    else if (b>c && b>d)
-    return b;
-    else if (c>d)
-    return c;
-    else 
-    return d; 
-    
-    
-}
 
 int main() {
-    int a, b, c, d;
-    scanf("%d %d %d %d", &a, &b, &c, &d);
-    int ans = max_of_four(a, b, c, d);
-    printf("%d", ans);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
     
+    int n;
+    cin>>n;
+    
+    int arr[n];
+    
+    for(int i=0; i<=n; i++){
+        cin>>arr[i];
+    }   
+    
+    for(int i= n-1; i>=0; i--){
+        cout << arr[i] << " ";
+    }
     return 0;
 }
